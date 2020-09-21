@@ -9,48 +9,50 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import javax.servlet.http.HttpSession;
+
 @Controller
-@RequestMapping("/")
+@RequestMapping("/student")
 public class StudentController {
     @Autowired
     private StudentService studentService;
 
-    @GetMapping("/student")
-    public String SelectStudentById(@RequestParam("stu_id")int stu_id, Model model){
-         Student student=  studentService.selectFromId(stu_id);
-        model.addAttribute("student",student);
-        model.addAttribute("msg","信息查询成功！");
+    @GetMapping("/select")
+    public String SelectStudentById(@RequestParam("id") int id, Model model, HttpSession session) {
+        Student student = studentService.selectFromId(id);
+        model.addAttribute("msg", "信息查询成功！");
+        session.setAttribute("student",student);
         System.out.println(student);
         return "sucess";
     }
-
-    @RequestMapping("/student/insert")
-    public String insert(@RequestParam("stu_name")String stu_name,
-                         @RequestParam("stu_number") String stu_number,
-                         @RequestParam("sex")String stu_gender,Model model){
-        int nub= doJudge(stu_gender);
-        Student student= new Student();
-        student.setStu_name(stu_name);
-        student.setStu_number(stu_number);
-        student.setStu_gender(nub);
-        studentService.insertInfo(student);
-        model.addAttribute("info","学生添加成功！");
+    @GetMapping("/login")
+    public String loginSelect(@RequestParam("name")String loginname,@RequestParam("pswd") String password, Model model,HttpSession session){
+        Student student = studentService.loginSelect(loginname,password);
+        System.out.println(student);
+        if(student.getLoginname().equals(loginname)){
+            if (student.getPassword().equals(password)){
+                session.setAttribute("user",student);
+            }else { model.addAttribute("msg","用户名错误，请检查后输入！");
+                    return "login";}
+        }else {model.addAttribute("msg","密码错误！");
+                    return "login";}
         return "sucess";
     }
 
+
     @RequestMapping("/index")
-    public String view(){
-        return "this";
-    }
-    public int doJudge(@RequestParam("sex")String sex){
-        String gender = "男";
-        int stu_gender;
-        if(sex.equals(gender)){
-             stu_gender =1;
-        }else {
-            stu_gender=0;
-        }
-    return stu_gender;
+    public String view() {
+        return "login";
     }
 
+//    public int doJudge(@RequestParam("sex") String sex) {
+//        String gender = "男";
+//        int stu_gender;
+//        if (sex.equals(gender)) {
+//            stu_gender = 1;
+//        } else {
+//            stu_gender = 0;
+//        }
+//        return stu_gender;
+//    }
 }

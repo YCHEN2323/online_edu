@@ -17,7 +17,13 @@ public class StudentServiceImpl implements StudentService {
     }
 
     @Override
-    public void insertInfo(Student student) {
-        studentDao.insertInfo(student);
+    public void updateInfo(int id) {
+        studentDao.updateInfo(id);
     }
+
+    @Override
+    public Student loginSelect(String loginname, String password) {
+        return studentDao.loginSelect(loginname,password);
+    }
+
 }

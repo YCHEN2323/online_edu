@@ -11,13 +11,10 @@
     <title>成功界面</title>
 </head>
 <body>
+<a>${user.name}</a>
+<br>
+<br>
+<br>
 <a>${msg}</a>
-<a>${student.stu_name}</a>
-<a>${student.stu_number}</a>
-<br>
-<br>
-<br>
-<a>${info}</a>
-
 </body>
 </html>

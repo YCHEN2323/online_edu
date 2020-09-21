@@ -4,5 +4,6 @@ import com.online.edu.pojo.Student;
 
 public interface StudentService {
     Student selectFromId(int stu_id);
-    void insertInfo(Student student);
+    void updateInfo(int id);
+    Student loginSelect(String loginname, String password);
 }
