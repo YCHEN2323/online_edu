@@ -61,7 +61,7 @@ public class CourseFileController {
         Date date = new Date();//获得系统时间.
         SimpleDateFormat sdf =   new SimpleDateFormat( " yyyy-MM-dd HH:mm:ss " );
         String nowTime = sdf.format(date);
-        Date time = sdf.parse( nowTime );
+        Date time = sdf.parse(nowTime);
 //        System.out.println(TIME.format(new Date()));// new Date()为获取当前系统时间
         // 判断路径是否存在，如果不存在则创建
         if(!dest.getParentFile().exists()) {
