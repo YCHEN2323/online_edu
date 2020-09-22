@@ -1,5 +1,7 @@
 package com.online.edu.pojo;
 
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.util.Date;
 
 public class CourseWare {
@@ -8,6 +10,7 @@ public class CourseWare {
     private String name;
     private String path;
     private int createrid;
+    @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createtime;
     private int downloadmount;
 
