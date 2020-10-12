@@ -20,30 +20,580 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ade7fe10-1f1b-43e0-8b73-e4dfea0ad9b4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/student.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/teacher.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/controller/CourseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/controller/IntentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/dao/CourseClassDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/dao/CourseStudentDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/pojo/CourseClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/pojo/CourseStudent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/service/CourseClassService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/service/impl/CourseClassServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_annotation_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_boot_starter_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_core_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_baomidou_mybatis_plus_extension_3_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_2_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/dao/TestDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/entity/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/entity/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap-theme.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/css/bootstrap.min.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/CHANGES.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/adapters/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/build-config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/ckeditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/contents.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/a11yhelp.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/fo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/gu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/hi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/mk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/mn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr-latn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/a11yhelp/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/about/dialogs/about.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/about/dialogs/hidpi/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/about/dialogs/logo_ckeditor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/balloonpanel/skins/kama/balloonpanel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/balloonpanel/skins/moono-lisa/balloonpanel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/balloonpanel/skins/moono-lisa/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/balloonpanel/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/balloonpanel/skins/moono/balloonpanel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/balloonpanel/skins/moono/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/balloonpanel/skins/moono/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/balloontoolbar/skins/default.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/balloontoolbar/skins/kama/balloontoolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/balloontoolbar/skins/moono-lisa/balloontoolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/balloontoolbar/skins/moono/balloontoolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/clipboard/dialogs/paste.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/dialog/dialogDefinition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/easyimage/dialogs/easyimagealt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/easyimage/styles/easyimage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/imagebase/styles/imagebase.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/link/dialogs/anchor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/link/dialogs/link.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/link/images/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/link/images/hidpi/anchor.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/magicline/images/hidpi/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/magicline/images/hidpi/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/magicline/images/icon-rtl.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/magicline/images/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/pastefromword/filter/default.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/scayt/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/scayt/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/scayt/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/scayt/dialogs/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/scayt/dialogs/options.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/scayt/dialogs/toolbar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/scayt/skins/moono-lisa/scayt.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/_translationstatus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/af.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/az.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/bg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/cy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/de-ch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/en-au.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/en-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/en-gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/en.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/eo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/es-mx.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/eu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/fr-ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/gl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/km.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/lt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/lv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/no.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/oc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/pt-br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/si.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/sq.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/tt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/ug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/zh-cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/lang/zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/specialchar/dialogs/specialchar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/table/dialogs/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/tableselection/styles/tableselection.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/tabletools/dialogs/tableCell.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/widget/images/handle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/wsc/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/wsc/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/wsc/dialogs/ciframe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/wsc/dialogs/tmpFrameset.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/wsc/dialogs/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/wsc/dialogs/wsc.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/wsc/dialogs/wsc_ie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/plugins/wsc/skins/moono-lisa/wsc.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/css/samples.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/img/github-top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/img/header-bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/img/header-separator.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/img/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/img/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/img/navigation-tip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/js/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/js/sf.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/ajax.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/api.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/appendto.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/assets/inlineall/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/assets/outputxhtml/outputxhtml.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/assets/posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/assets/sample.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/assets/uilanguages/languages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/datafiltering.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/dialog/assets/my_dialog.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/dialog/dialog.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/divreplace.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/easyimage/easyimage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/enterkey/enterkey.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.fla" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/outputforflash.swf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/htmlwriter/assets/outputforflash/swfobject.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/htmlwriter/outputforflash.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/htmlwriter/outputhtml.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/inlineall.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/inlinebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/inlinetextarea.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/jquery.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/magicline/magicline.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/readonly.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/replacebyclass.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/replacebycode.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/sample.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/sample.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/sample_posteddata.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/tabindex.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/toolbar/toolbar.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/uicolor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/uilanguages.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/wysiwygarea/fullpage.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/old/xhtmlstyle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/css/fontello.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/font/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/font/config.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/font/fontello.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/font/fontello.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/font/fontello.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/font/fontello.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/js/abstracttoolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/js/fulltoolbareditor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/js/toolbarmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/js/toolbartextmodifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/codemirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/javascript.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/neo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/samples/toolbarconfigurator/lib/codemirror/show-hint.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/dialog.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/dialog_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/dialog_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/dialog_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/editor_gecko.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/editor_ie.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/editor_ie8.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/editor_iequirks.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/icons.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/icons_hidpi.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/images/arrow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/images/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/images/hidpi/close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/images/hidpi/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/images/hidpi/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/images/hidpi/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/images/lock-open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/images/lock.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/images/refresh.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/images/spinner.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/skins/moono-lisa/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/ckeditor/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/my.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style2.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/css/style3.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/img/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/check.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery-3.3.1.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/jquery.validate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/static/js/messages_zh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/online/edu/plusTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_1.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/online_edu.iml" beforeDir="false" afterPath="$PROJECT_DIR$/online_edu.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/error.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/login.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/upload.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/upload.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/controller/CourseFileController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/controller/CourseFileController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/dao/StudentDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/pojo/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/pojo/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/service/impl/StudentServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/service/impl/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/controller/StudentController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/dao/StudentDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/pojo/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/service/StudentService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/service/impl/StudentServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/student.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/student.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/teacher.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Webapp/WEB-INF/teacher.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/controller/CourseController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/controller/CourseFileController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/dao/CourseClassDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/dao/CourseStudentDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/dao/CourseWareDao.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/online/edu/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/pojo/CourseClass.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/pojo/CourseStudent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/pojo/CourseWare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/pojo/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/service/CourseClassService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/service/CourseWareService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/service/impl/CourseClassServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/service/impl/CourseWareServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/online/edu/service/impl/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/css/layui.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/layui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/css/layui.mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/layui.mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/css/modules/code.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/modules/code.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/css/modules/laydate/default/laydate.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/css/modules/layer/default/icon-ext.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/css/modules/layer/default/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/modules/layer/default/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/css/modules/layer/default/layer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/modules/layer/default/layer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/css/modules/layer/default/loading-0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/css/modules/layer/default/loading-1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/css/modules/layer/default/loading-2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/font/iconfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/font/iconfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/font/iconfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/font/iconfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/font/iconfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/font/iconfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/font/iconfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/font/iconfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/font/iconfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/font/iconfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/0.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/0.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/1.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/1.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/10.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/10.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/11.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/11.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/12.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/12.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/13.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/13.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/14.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/14.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/15.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/15.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/16.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/16.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/17.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/17.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/18.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/18.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/19.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/19.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/2.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/2.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/20.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/20.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/21.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/21.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/22.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/22.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/23.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/23.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/24.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/24.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/25.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/25.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/26.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/26.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/27.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/27.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/28.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/28.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/29.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/29.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/3.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/3.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/30.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/30.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/31.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/31.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/32.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/32.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/33.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/33.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/34.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/34.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/35.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/35.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/36.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/36.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/37.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/37.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/38.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/38.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/39.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/39.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/4.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/4.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/40.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/40.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/41.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/41.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/42.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/42.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/43.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/43.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/44.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/44.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/45.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/45.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/46.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/46.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/47.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/47.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/48.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/48.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/49.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/49.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/5.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/5.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/50.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/50.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/51.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/51.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/52.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/52.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/53.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/53.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/54.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/54.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/55.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/55.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/56.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/56.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/57.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/57.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/58.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/58.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/59.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/59.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/6.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/6.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/60.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/60.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/61.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/61.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/62.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/62.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/63.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/63.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/64.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/64.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/65.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/65.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/66.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/66.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/67.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/67.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/68.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/68.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/69.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/69.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/7.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/7.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/70.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/70.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/71.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/71.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/8.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/8.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/images/face/9.gif" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/images/face/9.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/carousel.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/carousel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/code.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/code.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/colorpicker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/colorpicker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/element.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/element.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/flow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/flow.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/form.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/jquery.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/jquery.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/laydate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/laydate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/layedit.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/layedit.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/layer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/layer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/laypage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/laypage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/laytpl.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/laytpl.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/mobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/mobile.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/rate.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/rate.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/slider.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/slider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/table.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/transfer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/transfer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/tree.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/tree.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/upload.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/upload.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/lay/modules/util.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/lay/modules/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/layui.all.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/layui.all.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/statics/layui.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/layui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/online_edu.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/controller/CourseController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/online/edu/controller/CourseController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/controller/CourseFileController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/online/edu/controller/CourseFileController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/online/edu/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/dao/CourseClassDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/online/edu/dao/CourseClassDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/dao/CourseStudentDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/online/edu/dao/CourseStudentDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/dao/UserDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/online/edu/dao/UserDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/pojo/CourseClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/online/edu/pojo/CourseClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/pojo/CourseStudent.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/online/edu/pojo/CourseStudent.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/pojo/CourseWare.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/online/edu/pojo/CourseWare.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/pojo/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/online/edu/pojo/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/online/edu/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/online/edu/service/impl/UserServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/online/edu/service/impl/UserServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/css/layui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/css/layui.mobile.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/css/modules/code.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/css/modules/laydate/default/laydate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/css/modules/layer/default/icon-ext.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/css/modules/layer/default/icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/css/modules/layer/default/layer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/css/modules/layer/default/loading-0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/css/modules/layer/default/loading-1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/css/modules/layer/default/loading-2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/font/iconfont.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/font/iconfont.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/font/iconfont.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/font/iconfont.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/font/iconfont.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/0.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/10.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/11.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/12.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/13.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/14.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/15.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/16.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/17.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/18.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/19.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/20.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/21.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/22.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/23.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/24.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/25.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/26.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/27.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/28.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/29.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/30.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/31.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/32.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/33.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/34.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/35.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/36.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/37.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/38.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/39.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/40.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/41.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/42.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/43.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/44.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/45.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/46.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/47.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/48.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/49.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/50.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/51.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/52.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/53.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/54.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/55.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/56.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/57.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/58.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/59.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/6.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/60.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/61.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/62.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/63.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/64.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/65.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/66.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/67.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/68.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/69.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/7.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/70.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/71.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/8.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/images/face/9.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/code.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/colorpicker.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/flow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/form.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/laydate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/layedit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/layer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/laypage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/laytpl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/mobile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/rate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/slider.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/table.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/transfer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/tree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/upload.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/lay/modules/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/layui.all.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/statics/layui.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +648,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="D:/C盘桌面文件/edu" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/static/img" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -112,14 +662,101 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IdeaIU\online_edu\src\main\resources\statics\css" />
+      <recent name="D:\IdeaIU\online_edu\src\main\Webapp" />
+      <recent name="D:\IdeaIU\online_edu\src\main" />
+      <recent name="D:\IdeaIU\online_edu\src\main\java" />
+      <recent name="D:\IdeaIU\online_edu\src\main\resources" />
+      <recent name="D:\IdeaIU\online_edu\src\main\Webapp\WEB-INF" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaIU\online_edu\src\main\resources\static\img" />
+      <recent name="D:\IdeaIU\online_edu\src\main\resources\static\css" />
+      <recent name="D:\IdeaIU\online_edu\src\main\Webapp" />
       <recent name="D:\IdeaIU\online_edu\src\main\resources\statics" />
       <recent name="D:\IdeaIU\online_edu\src\main\resources\statics\css" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.EduApplication">
+    <configuration name="plusTest.checkNameNo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="online_edu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.online.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.online.edu" />
+      <option name="MAIN_CLASS_NAME" value="com.online.edu.plusTest" />
+      <option name="METHOD_NAME" value="checkNameNo" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="plusTest.checkNameNoF (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="online_edu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.online.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.online.edu" />
+      <option name="MAIN_CLASS_NAME" value="com.online.edu.plusTest" />
+      <option name="METHOD_NAME" value="checkNameNoF(org.springframework.ui.Model)" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="plusTest.checkNameNoF" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="online_edu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.online.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.online.edu" />
+      <option name="MAIN_CLASS_NAME" value="com.online.edu.plusTest" />
+      <option name="METHOD_NAME" value="checkNameNoF" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="plusTest.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="online_edu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.online.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.online.edu" />
+      <option name="MAIN_CLASS_NAME" value="com.online.edu.plusTest" />
+      <option name="METHOD_NAME" value="testDelete" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="plusTest.testSelect" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="online_edu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.online.edu.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.online.edu" />
+      <option name="MAIN_CLASS_NAME" value="com.online.edu.plusTest" />
+      <option name="METHOD_NAME" value="testSelect" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="EduApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="online_edu" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.online.edu.EduApplication" />
@@ -129,6 +766,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.plusTest.checkNameNo" />
+        <item itemvalue="JUnit.plusTest.testDelete" />
+        <item itemvalue="JUnit.plusTest.checkNameNoF" />
+        <item itemvalue="JUnit.plusTest.checkNameNoF (1)" />
+        <item itemvalue="JUnit.plusTest.testSelect" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -150,7 +796,25 @@
       <workItem from="1600609920340" duration="136000" />
       <workItem from="1600669295690" duration="65000" />
       <workItem from="1600670842536" duration="9791000" />
-      <workItem from="1600764878729" duration="18383000" />
+      <workItem from="1600764878729" duration="20344000" />
+      <workItem from="1600819583139" duration="14541000" />
+      <workItem from="1600841268621" duration="6210000" />
+      <workItem from="1600848377902" duration="479000" />
+      <workItem from="1600848865853" duration="108000" />
+      <workItem from="1600848983418" duration="64000" />
+      <workItem from="1600849136856" duration="143000" />
+      <workItem from="1600849340486" duration="491000" />
+      <workItem from="1600849993207" duration="928000" />
+      <workItem from="1600867999077" duration="1808000" />
+      <workItem from="1601111433060" duration="499000" />
+      <workItem from="1601713387062" duration="1062000" />
+      <workItem from="1601801706473" duration="877000" />
+      <workItem from="1601804509608" duration="8662000" />
+      <workItem from="1601910731193" duration="1914000" />
+      <workItem from="1602060417746" duration="4540000" />
+      <workItem from="1602213445461" duration="2771000" />
+      <workItem from="1602216256992" duration="10030000" />
+      <workItem from="1602418458297" duration="1114000" />
     </task>
     <servers />
   </component>
@@ -178,19 +842,23 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="395" y="91" key="#Inspections/0.0.1536.824@0.0.1536.824" timestamp="1600649829961" />
+    <state x="522" y="0" key="#Template_Data_Languages" timestamp="1600822243014">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="522" y="0" key="#Template_Data_Languages/0.0.1536.824@0.0.1536.824" timestamp="1600822243014" />
     <state x="962" y="222" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1600680638747">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="962" y="222" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600680638747" />
-    <state x="331" y="133" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1600654232597">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="331" y="133" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1600654232597" />
-    <state x="414" y="168" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600510088273" />
-    <state x="1201" y="132" key="#com.intellij.ide.util.MemberChooser" timestamp="1600783435541">
+    <state x="414" y="168" width="1150" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602060898451">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="961" y="43" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600768218996" />
+    <state x="331" y="133" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1600654232597" />
+    <state x="414" y="168" width="1150" height="703" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602060898451" />
+    <state x="961" y="43" key="#com.intellij.ide.util.MemberChooser" timestamp="1600824759312">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="961" y="43" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1600824759312" />
     <state x="1201" y="132" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1600783435541" />
     <state x="1098" y="254" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1600422224663">
       <screen x="0" y="0" width="1920" height="1040" />
@@ -216,60 +884,60 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="1197" y="358" width="467" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1600422225779" />
-    <state x="275" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1600781867909">
+    <state x="275" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1601813004901">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="220" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1600767135684" />
-    <state x="275" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600781867909" />
-    <state x="1107" y="212" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1600678899881">
+    <state x="275" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1601813004901" />
+    <state x="1107" y="212" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1602418523746">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1107" y="212" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600678899881" />
-    <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1600778780249">
+    <state x="1107" y="212" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602418523746" />
+    <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1602060704275">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="173" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600766492249" />
-    <state x="690" y="218" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1600778780249" />
-    <state width="1070" height="23" key="GridCell.Tab.0.bottom" timestamp="1600788639572">
+    <state x="552" y="173" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1600850316826" />
+    <state x="690" y="218" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602060704275" />
+    <state width="1865" height="45" key="GridCell.Tab.0.bottom" timestamp="1602229554761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="374" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600770681969" />
-    <state width="1070" height="23" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600788639572" />
-    <state width="1070" height="23" key="GridCell.Tab.0.center" timestamp="1600788639572">
+    <state width="1481" height="101" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600851212082" />
+    <state width="1865" height="45" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602229554761" />
+    <state width="1865" height="45" key="GridCell.Tab.0.center" timestamp="1602229554761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="374" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600770681969" />
-    <state width="1070" height="23" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600788639572" />
-    <state width="1070" height="23" key="GridCell.Tab.0.left" timestamp="1600788639572">
+    <state width="1481" height="101" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1600851212082" />
+    <state width="1865" height="45" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602229554761" />
+    <state width="1865" height="45" key="GridCell.Tab.0.left" timestamp="1602229554761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="374" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600770681969" />
-    <state width="1070" height="23" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600788639572" />
-    <state width="1070" height="23" key="GridCell.Tab.0.right" timestamp="1600788639572">
+    <state width="1481" height="101" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1600851212081" />
+    <state width="1865" height="45" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602229554761" />
+    <state width="1865" height="45" key="GridCell.Tab.0.right" timestamp="1602229554761">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="374" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600770681969" />
-    <state width="1070" height="23" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600788639572" />
-    <state width="1070" height="23" key="GridCell.Tab.1.bottom" timestamp="1600788639573">
+    <state width="1481" height="101" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1600851212082" />
+    <state width="1865" height="45" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602229554761" />
+    <state width="1865" height="3" key="GridCell.Tab.1.bottom" timestamp="1602229554732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="374" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600770681969" />
-    <state width="1070" height="23" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1600788639573" />
-    <state width="1070" height="23" key="GridCell.Tab.1.center" timestamp="1600788639572">
+    <state width="1481" height="101" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1600851212082" />
+    <state width="1865" height="3" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602229554732" />
+    <state width="1865" height="3" key="GridCell.Tab.1.center" timestamp="1602229554732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="374" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600770681969" />
-    <state width="1070" height="23" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1600788639572" />
-    <state width="1070" height="23" key="GridCell.Tab.1.left" timestamp="1600788639572">
+    <state width="1481" height="101" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1600851212082" />
+    <state width="1865" height="3" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602229554732" />
+    <state width="1865" height="3" key="GridCell.Tab.1.left" timestamp="1602229554732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="374" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600770681969" />
-    <state width="1070" height="23" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1600788639572" />
-    <state width="1070" height="23" key="GridCell.Tab.1.right" timestamp="1600788639573">
+    <state width="1481" height="101" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1600851212082" />
+    <state width="1865" height="3" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602229554732" />
+    <state width="1865" height="3" key="GridCell.Tab.1.right" timestamp="1602229554732">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1145" height="374" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600770681969" />
-    <state width="1070" height="23" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1600788639573" />
+    <state width="1481" height="101" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1600851212082" />
+    <state width="1865" height="3" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602229554732" />
     <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1600649383391">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -279,18 +947,22 @@
     </state>
     <state x="268" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600649329393" />
     <state x="335" y="19" width="1171" height="1021" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1600421670004" />
-    <state x="474" y="273" key="com.intellij.ide.util.TipDialog" timestamp="1600764878870">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="592" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1602418470727">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="474" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600764878870" />
-    <state x="592" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1600670841999" />
+    <state x="474" y="273" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1600854109393" />
+    <state x="592" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602418470727" />
     <state x="124" y="-17" width="600" height="804" key="find.popup" timestamp="1600656854185">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="124" y="-17" width="600" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1600656854185" />
-    <state x="865" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1600788101420">
+    <state x="230" y="197" width="1459" height="696" key="new project wizard" timestamp="1601801912718">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="865" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1600788101420" />
+    <state x="230" y="197" width="1459" height="696" key="new project wizard/0.0.1920.1040@0.0.1920.1040" timestamp="1601801912718" />
+    <state x="865" y="5" width="840" height="1034" key="search.everywhere.popup" timestamp="1602223396157">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="865" y="5" width="840" height="1034" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602223396157" />
   </component>
 </project>

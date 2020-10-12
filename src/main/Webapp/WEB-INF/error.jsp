@@ -11,6 +11,6 @@
     <title>错误</title>
 </head>
 <body>
-    <h1>404,资源错误</h1>
+<h1>404,资源错误</h1>
 </body>
 </html>
