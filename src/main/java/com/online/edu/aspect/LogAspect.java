@@ -14,7 +14,7 @@ import java.util.Arrays;
 //切面编程测试对teacher功能的日志处理
 @Aspect
 @Component
-public class FliterAspcet {
+public class LogAspcet {
 
     public static final Logger logger=LoggerFactory.getLogger(LogAspcet.class);
     //创建切面的切入点
@@ -72,4 +72,3 @@ public class FliterAspcet {
         }
     }
 }
-
